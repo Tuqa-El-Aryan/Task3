@@ -1,0 +1,209 @@
+
+:host {
+  display: block;
+  font-family: Arial, sans-serif;
+}
+
+.mat-mdc-row{
+    height: 80px;
+}
+
+.active-link {
+    background-color: #d7dbdb; /* Example background color for active link */
+    font-weight: bold;         /* Example to make the text bold */
+  }
+
+
+mat-toolbar {
+  background-color: #f0f0f0;
+  color: rgb(0, 0, 0);
+  height: 80px
+}
+
+mat-toolbar h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+
+mat-sidenav-container {
+  height: 100vh;
+}
+
+h2{
+    margin-top: 4%;
+    margin-left: 3%;
+}
+.name{
+    font-size: 15px;
+}
+.brand-name {
+    font-size: 35px;
+    font-weight: 500;
+    padding: 2%;
+  }
+mat-sidenav {
+  width: 220px;
+  background: #f0f0f0;
+  border-radius: 0%;
+}
+mat-sidenav-content{
+    background: #fafafa;
+
+}
+mat-sidenav mat-nav-list {
+  margin-top: 20px;
+  
+}
+
+mat-paginator ::ng-deep .mat-mdc-paginator-container {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between  !important;
+    padding: 0 80px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+mat-paginator[_ngcontent-ng-c3529048284] {
+    margin-top: 0px; 
+}
+
+mat-table {
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+mat-header-cell, mat-cell {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.mat-mdc-nav-list .mat-mdc-list-item {
+    border-radius: 0px;
+    --mat-mdc-focus-indicator-border-radius: var(--mat-list-active-indicator-shape, var(--mat-app-corner-full));
+}
+
+mat-header-cell {
+  font-weight: bold;
+}
+
+.actions-cell {
+  display: flex;
+  gap: 10px;
+}
+
+.actions-cell button {
+  min-width: 36px;
+  padding: 5px;
+}
+
+.country-flag {
+  width: 24px;
+  height: auto;
+}
+
+
+mat-paginator {
+  margin-top: 20px;
+}
+
+
+
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .table-container {
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    width: 90%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.mat-mdc-table {
+    min-width: 100%;
+    border: 0;
+    border-spacing: 0;
+    table-layout: auto;
+    white-space: normal;
+    background-color: #ffffff;
+}
+  
+.mat-mdc-header-row {
+    background-color: #f0f0f0;
+}
+
+.search-container {
+    display: flex;
+    justify-content: flex-end; /* Align search bar to the right */
+   
+    
+  }
+  
+  .example-full-width {
+    width: 30%; /* Half the width of the table */
+    margin-right: 5%;
+  }
+  
+  .onboarding-bg {
+    background-color: #d8d8d8; /* Light yellow for Onboarding */
+    padding: 6px 20px; /* Optional: Add padding to give the word some space around it */
+    border-radius: 4px; /* Optional: Make the background color rounded */
+  }
+  
+  .leaves-bg {
+    background-color: #f0f0f0; /* Light green for Leaves */
+    padding: 6px 20px;
+    border-radius: 4px;
+  }
+  
+  .attendance-bg {
+    background-color: #969696; /* Light blue for Attendance */
+    padding: 6px 20px;
+    border-radius: 4px;
+    color: white;
+  }
+ 
+  
+/* Hide sidenav on mobile */
+@media (max-width: 768px) {
+    mat-sidenav {
+      display: none;
+    }
+    mat-toolbar .menu-button {
+      display: block;  /* Show the menu button */
+    }
+
+    .table-scroll-container {
+        overflow-x: auto;  /* Enable horizontal scroll */
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
+        margin: 0 10px; /* Optional: Add some margin for better spacing */
+      }
+    
+    mat-table {
+        min-width: 600px; /* Adjust based on your table's content width */
+      }
+
+
+    mat-paginator ::ng-deep .mat-mdc-paginator-container {
+        display: flex; 
+        align-items: center;
+        justify-content:  center;
+        padding: 10px ;
+        margin-left: 6%;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+  }
+  
+  /* Hide the menu button by default (on desktop) */
+  .menu-button {
+    display: none;
+  }

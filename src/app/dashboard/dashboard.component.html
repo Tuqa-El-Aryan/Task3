@@ -1,0 +1,44 @@
+<mat-toolbar>
+    <span class="brand-name">Olive</span>
+    <span class="example-spacer"></span>
+    <span class="name">Admin Name</span>
+    
+     <!-- Menu Button for Mobile -->
+  <button mat-icon-button class="menu-button" [matMenuTriggerFor]="menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <!-- Mobile Menu -->
+  <mat-menu #menu="matMenu">
+    <mat-list-item [routerLink]="['/dashboard']" [class.active-link]="activeLink === '/dashboard'" (click)="setActive('/dashboard')">Dashboard</mat-list-item>
+    <mat-list-item [routerLink]="['/rules-engine']" [class.active-link]="activeLink === '/rules-engine'" (click)="setActive('/rules-engine')">Rules Engine</mat-list-item>
+    <mat-list-item>Accounts</mat-list-item>
+    <mat-list-item>Billing</mat-list-item>
+    <mat-list-item>User Management</mat-list-item>
+    <mat-list-item>Settings</mat-list-item>
+  </mat-menu>
+  </mat-toolbar>
+  
+  <mat-sidenav-container class="sidenav-container">
+    <mat-sidenav mode="side" opened>
+      <mat-nav-list>
+        <mat-list-item [routerLink]="['/dashboard']" [class.active-link]="activeLink === '/dashboard'" (click)="setActive('/dashboard')">Dashboard</mat-list-item>
+      <mat-list-item [routerLink]="['/rules-engine']" [class.active-link]="activeLink === '/rules-engine'" (click)="setActive('/rules-engine')">Rules Engine</mat-list-item>
+        <mat-list-item>Accounts</mat-list-item>
+        <mat-list-item>Billing</mat-list-item>
+        <mat-list-item>User Management</mat-list-item>
+        <mat-list-item>Settings</mat-list-item>
+      </mat-nav-list>
+    </mat-sidenav>
+
+
+    <mat-sidenav-content>
+        <div class="content">
+          <h2>Dashboard</h2>
+          <div class="table-container">
+            
+          </div>
+         
+          
+        </div>
+      </mat-sidenav-content>
+</mat-sidenav-container>

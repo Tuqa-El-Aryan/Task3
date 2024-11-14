@@ -1,0 +1,159 @@
+
+:host {
+    display: block;
+    font-family: Arial, sans-serif;
+  }
+  
+  .mat-mdc-row{
+      height: 80px;
+  }
+  
+  .active-link {
+    background-color: #d7dbdb; /* Example background color for active link */
+    font-weight: bold;         /* Example to make the text bold */
+  }
+  mat-toolbar {
+    background-color: #f0f0f0;
+    color: rgb(0, 0, 0);
+    height: 80px
+  }
+  
+  mat-toolbar h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  
+  mat-sidenav-container {
+    height: 100vh;
+  }
+  
+  h2{
+      margin-top: 4%;
+      margin-left: 3%;
+  }
+  .name{
+    font-size: 15px;
+}
+  .brand-name {
+      font-size: 35px;
+      font-weight: 500;
+      padding: 2%;
+    }
+  mat-sidenav {
+    width: 220px;
+    background: #f0f0f0;
+    border-radius: 0%;
+  }
+  mat-sidenav-content{
+      background: #fafafa;
+  
+  }
+  mat-sidenav mat-nav-list {
+    margin-top: 20px;
+    
+  }
+  
+  mat-paginator ::ng-deep .mat-mdc-paginator-container {
+      display: flex; 
+      align-items: center;
+      justify-content: space-between  !important;
+      padding: 0 80px;
+      flex-wrap: wrap;
+      width: 100%;
+  }
+  
+  mat-paginator[_ngcontent-ng-c3529048284] {
+      margin-top: 0px; 
+  }
+  
+  mat-table {
+    width: 100%;
+    border: 1px solid #ddd;
+  }
+  
+  mat-header-cell, mat-cell {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .mat-mdc-nav-list .mat-mdc-list-item {
+      border-radius: 0px;
+      --mat-mdc-focus-indicator-border-radius: var(--mat-list-active-indicator-shape, var(--mat-app-corner-full));
+  }
+  
+  mat-header-cell {
+    font-weight: bold;
+  }
+  
+  .actions-cell {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .actions-cell button {
+    min-width: 36px;
+    padding: 5px;
+  }
+  
+  .country-flag {
+    width: 24px;
+    height: auto;
+  }
+  
+  
+  mat-paginator {
+    margin-top: 20px;
+  }
+  
+  
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .example-spacer {
+      flex: 1 1 auto;
+    }
+  
+    .table-container {
+      justify-content: center;
+      align-items: center;
+      margin: 3% auto 0 auto;
+      width: 90%;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1);
+      position: relative;
+  }
+  
+  .mat-mdc-table {
+      min-width: 100%;
+      border: 0;
+      border-spacing: 0;
+      table-layout: auto;
+      white-space: normal;
+      background-color: #ffffff;
+  }
+    
+  .mat-mdc-header-row {
+      background-color: #f0f0f0;
+  }
+  
+  
+  /* Hide sidenav on mobile */
+@media (max-width: 768px) {
+    mat-sidenav {
+      display: none;
+    }
+    mat-toolbar .menu-button {
+      display: block;  /* Show the menu button */
+    }
+  }
+  
+  /* Hide the menu button by default (on desktop) */
+  .menu-button {
+    display: none;
+  }
+
+  
