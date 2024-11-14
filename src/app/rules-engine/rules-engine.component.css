@@ -171,8 +171,8 @@ mat-paginator {
   }
  
   img.flag {
-    max-width: 40px; /* Adjust width as needed */
-    max-height: 40px; /* Adjust height as needed */
+    max-width: 40px; 
+    max-height: 40px; 
   }
 
 @media (max-width: 768px) {
