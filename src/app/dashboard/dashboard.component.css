@@ -9,8 +9,8 @@
   }
   
   .active-link {
-    background-color: #d7dbdb; /* Example background color for active link */
-    font-weight: bold;         /* Example to make the text bold */
+    background-color: #d7dbdb;
+    font-weight: bold;       
   }
   mat-toolbar {
     background-color: #f0f0f0;
@@ -141,17 +141,17 @@
   }
   
   
-  /* Hide sidenav on mobile */
+
 @media (max-width: 768px) {
     mat-sidenav {
       display: none;
     }
     mat-toolbar .menu-button {
-      display: block;  /* Show the menu button */
+      display: block; 
     }
   }
   
-  /* Hide the menu button by default (on desktop) */
+ 
   .menu-button {
     display: none;
   }

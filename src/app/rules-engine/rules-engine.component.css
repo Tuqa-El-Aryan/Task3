@@ -9,8 +9,8 @@
 }
 
 .active-link {
-    background-color: #d7dbdb; /* Example background color for active link */
-    font-weight: bold;         /* Example to make the text bold */
+    background-color: #d7dbdb; 
+    font-weight: bold;        
   }
 
 
@@ -141,53 +141,53 @@ mat-paginator {
 
 .search-container {
     display: flex;
-    justify-content: flex-end; /* Align search bar to the right */
+    justify-content: flex-end; 
    
     
   }
   
   .example-full-width {
-    width: 30%; /* Half the width of the table */
+    width: 30%; 
     margin-right: 5%;
   }
   
   .onboarding-bg {
-    background-color: #d8d8d8; /* Light yellow for Onboarding */
-    padding: 6px 20px; /* Optional: Add padding to give the word some space around it */
-    border-radius: 4px; /* Optional: Make the background color rounded */
+    background-color: #d8d8d8; 
+    padding: 6px 20px; 
+    border-radius: 4px; 
   }
   
   .leaves-bg {
-    background-color: #f0f0f0; /* Light green for Leaves */
+    background-color: #f0f0f0;
     padding: 6px 20px;
     border-radius: 4px;
   }
   
   .attendance-bg {
-    background-color: #969696; /* Light blue for Attendance */
+    background-color: #969696; 
     padding: 6px 20px;
     border-radius: 4px;
     color: white;
   }
  
   
-/* Hide sidenav on mobile */
+
 @media (max-width: 768px) {
     mat-sidenav {
       display: none;
     }
     mat-toolbar .menu-button {
-      display: block;  /* Show the menu button */
+      display: block;  
     }
 
     .table-scroll-container {
-        overflow-x: auto;  /* Enable horizontal scroll */
-        -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
-        margin: 0 10px; /* Optional: Add some margin for better spacing */
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; 
+        margin: 0 10px; 
       }
     
     mat-table {
-        min-width: 600px; /* Adjust based on your table's content width */
+        min-width: 600px; 
       }
 
 
@@ -203,7 +203,7 @@ mat-paginator {
     
   }
   
-  /* Hide the menu button by default (on desktop) */
+
   .menu-button {
     display: none;
   }
