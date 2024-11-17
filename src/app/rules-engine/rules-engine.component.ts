@@ -24,7 +24,9 @@ const ELEMENT_DATA: Rule[] = [
   { ruleName: 'Country General', module: 'Onboarding', countryFlag: 'assets/flags/jordan.png', status: 'Draft' },
   { ruleName: 'Scheduling', module: 'Leaves', countryFlag: 'assets/flags/jordan.png', status: 'Ready' },
   { ruleName: 'Country General', module: 'Onboarding', countryFlag: 'assets/flags/ksa.png', status: 'Inactive' },
-  { ruleName: 'Time tracking', module: 'Attendance', countryFlag: 'assets/flags/armenia.png', status: 'Active' }
+  { ruleName: 'Time tracking', module: 'Attendance', countryFlag: 'assets/flags/armenia.png', status: 'Active' },
+ 
+
 ];
 
 @Component({
